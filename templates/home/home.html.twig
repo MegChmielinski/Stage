@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{asset('css/glightbox.min.css') }}">
+        <link rel="stylesheet" href="{{asset('css/lineicons.css') }}">
+        <link rel="stylesheet" href="{{asset('css/tiny-slider.css') }}">
+        <link rel="stylesheet" href="{{asset('css/style1.css') }}">
+        <link rel="stylesheet" href="{{asset('css/book.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{asset('js/bootstrap.bundle.min.js') }}" defer></script>
+            <script src="{{asset('js/glightbox.min.js') }}" defer></script>
+            <script src="{{asset('js/main.js') }}" defer></script>
+            <script src="{{asset('js/tiny-slider.js') }}" defer></script>
+			<script src="{{asset('js/play.js') }}" defer></script>
+        {% endblock %}
+    </head>
+<body>
+  <!--====== NAVBAR NINE PART START ======-->
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="{{asset('image/logo.svg') }}" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#accueil">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#livre">Livre</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="page-scroll" href="#about">À Propos </a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-btn d-none d-lg-inline-block">
+              <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
+
+  <!--====== SIDEBAR PART START ======-->
+
+  <div class="sidebar-left">
+    <div class="sidebar-close">
+      <a class="close" href="#close"><i class="lni lni-close"></i></a>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-logo">
+        <a href="index.html"><img src="{{asset('image/logo.svg') }}" alt="Logo" /></a>
+      </div>
+      <p class="text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.</p>
+      <!-- logo -->
+      <div class="sidebar-menu">
+        <h5 class="menu-title">Lien utile</h5>
+        <ul>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="/personne/new">Recensement</a></li>
+          <li><a href="#livre">Livre</a></li>
+          <li><a href="#contact">Nous contacter </a></li>
+        </ul>
+      </div>
+      <!-- menu -->
+      <div class="sidebar-social align-items-center justify-content-center">
+        <h5 class="social-title">Suivez-nous sur tous nos réseaux sociaux</h5>
+        <ul>
+          <li>
+            <a href="javascript:"><i class="lni lni-facebook-filled"></i></a>
+          </li>
+          <li>
+            <a href="javascript:"><i class="lni lni-twitter-original"></i></a>
+          </li>
+          <li>
+            <a href="javascript:"><i class="lni lni-linkedin-original"></i></a>
+          </li>
+          <li>
+            <a href="javascript:"><i class="lni lni-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar social -->
+    </div>
+    <!-- content -->
+  </div>
+  <div class="overlay-left"></div>
+
+  <!--====== SIDEBAR PART ENDS ======-->
+
+  <!-- Start header Area -->
+  <section id="accueil" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>Lorem ipsum dolor sit amet adipisicing elit.</h1>
+            <p>
+             Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.
+            </p>
+            <div class="button">
+              <a href="personne/new" class="btn primary-btn">Recensement</a>
+              <a href="https://www.youtube.com/watch?v=1ZYbU82GVz4"
+                class="glightbox video-button">
+                <span class="btn icon-btn rounded-full">
+                  <i class="lni lni-play"></i>
+                </span>
+                <span class="text">Guide</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="{{asset('image/hero-image.jpg') }}" alt="#" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+
+  <!--====== ABOUT FIVE PART START ======-->
+
+  <section  id="livre">
+      <div  class="about-area about-five">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <div class="container-book">
+                <div class="book-layout">
+                   <div class="actions">
+                   </div>  
+                      <div class="book-cover">
+                        <img class="book-top" src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-top.svg" alt="book-top" />
+                        <img class="book-side" src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg" alt="book-side" /> 
+                      </div>
+                      <div class="preface">
+                        <div class="content">
+                          <div class="header-book">
+                            <div class="title-book">Lorem ipsum dolor sit amet </div>
+                        </div>
+                        <div class="author">Par Lorem ipsum</div>
+                        <div class="body-book">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut imperdiet elit. Pellentesque non augue tellus. Donec a fringilla mauris. Duis ex purus, finibus ac libero nec, pellentesque aliquam ligula.
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut imperdiet elit. Pellentesque non augue tellus. Donec a fringilla mauris.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="call-action">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+          <div class="inner-content">
+            <h2>À Propos</h2>
+            <p>
+              Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.<br />
+              Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.
+              Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about -->
+
+  <!-- ========================= contact-section start ========================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="contact-item-wrapper">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Contact</h4>
+                    <p>123456789</p>
+                    <p>email@email.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Adresse</h4>
+                    <p>Place Augustin Laurent
+                    <br>  CS 30667<br>
+                    59033 Lille Cedex</p>
+                    <p>United States</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-alarm-clock"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Horaire</h4>
+                    <p>Du Lundi au Vendredi : </p>
+                    <p>08:30 à 12:00 - 13:00 à 17:30</p>
+                    <p>Samedi : 08:00-12:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <div class="contact-form-wrapper">
+            <div class="row">
+              <div class="col-xl-10 col-lg-8 mx-auto">
+                <div class="section-title text-center">
+                  <span> Contactez-nous</span>
+                  <p>
+                La XXXX vous facilite la vie avec un seul numéro d'appel pour vous renseigner pour toute question :
+                   </p>
+                   <span>
+                    123456789
+                  </span>
+                  <p></p>
+                Pour tout renseignement, vous pouvez également compléter le formulaire ci-dessous :
+                  </p>
+                </div>
+              </div>
+            </div>
+            {{ form_start(contactForm) }}
+              <div class="row">
+                <div class="col-md-6">
+                  {{ form_row(contactForm.nom) }}
+                </div>
+                <div class="col-md-6">
+                  {{ form_row(contactForm.email) }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  {{ form_row(contactForm.numero) }}
+                </div>
+                <div class="col-md-6">
+                  {{ form_row(contactForm.sujet) }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  {{ form_row(contactForm.message) }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="button text-center rounded-buttons">
+                    {{ form_row(contactForm.envoyer) }}
+                  </div>
+                </div>
+              </div>
+            {{ form_end(contactForm) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= contact-section end ========================= -->
+
+  <!-- ========================= map-section end ========================= -->
+    <div class="map-container">
+      <object style="border:0; height: 500px; width: 100%;"
+        data="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1265.350615541006!2d3.0708295355441213!3d50.63266676238482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58c69aa1d65%3A0x8791ba7b2522be1b!2sMairie%20de%20Lille!5e0!3m2!1sfr!2sfr!4v1653238837619!5m2!1sfr!2sfr"></object>
+    </div>
+  <!-- ========================= map-section end ========================= -->
+
+  <!-- Start Footer Area -->
+  <footer class="footer-area footer-eleven">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-about">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="{{asset('image/logo.svg') }}" alt="#" class="img-fluid" />
+                  </a>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro
+                </p>
+                <p class="copyright-text">
+                  <span>© 2022 TOUS DROITS RÉSERVÉS</span>
+                </p>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+
+</body>
+</html>
